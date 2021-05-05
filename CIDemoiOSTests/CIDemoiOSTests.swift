@@ -25,7 +25,7 @@ class CIDemoiOSTests: XCTestCase {
     
     func testCalculation(){
         let val = 5 - 3
-        XCTAssert(val == 1)
+        XCTAssert(val == 2)
     }
 
     func testPerformanceExample() throws {
