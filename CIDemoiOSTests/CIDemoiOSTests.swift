@@ -22,6 +22,11 @@ class CIDemoiOSTests: XCTestCase {
         // This is an example of a functional test case.
         // Use XCTAssert and related functions to verify your tests produce the correct results.
     }
+    
+    func testCalculation(){
+        let val = 5 - 3
+        XCTAssert(val == 1)
+    }
 
     func testPerformanceExample() throws {
         // This is an example of a performance test case.
