@@ -26,24 +26,25 @@ TEST_DEVICES = [
   # scan(scheme: "Example")
 
 
-  run_tests(
-            scheme: "CIDemoiOSTests",
-            skip_detect_devices:true
-            )
+  # run_tests(
+  #           scheme: "CIDemoiOSTests",
+  #           skip_detect_devices:true
+  #           )
 
-  # run_tests(workspace: "CIDemoiOS.xcworkspace",
-  # 			destination: TEST_DEVICES,
-  #           # devices: ["iPhone"],
-  #           scheme: "CIDemoiOSTests")
-  # build_app(scheme: "CIDemoiOS",
-  # 			export_method: "enterprise",
-  # 			export_options: {
-		#       provisioningProfiles: { 
-		#         "jp.co.rakuten.mobile.anshin.qa" => "Anshin_Control_Enterprise"
-		#       }
-		#     },
-  #           workspace: "CIDemoiOS.xcworkspace",
-  #           include_bitcode: false,
-  #           clean: true)
+  run_tests(workspace: "CIDemoiOS.xcworkspace",
+  			# destination: TEST_DEVICES,
+        # destination: ["iPhone 8"],
+            devices: ["iPhone 8"],
+            scheme: "CIDemoiOSTests")
+  build_app(scheme: "CIDemoiOS",
+  			export_method: "enterprise",
+  			export_options: {
+		      provisioningProfiles: { 
+		        "jp.co.rakuten.mobile.anshin.qa" => "Anshin_Control_Enterprise"
+		      }
+		    },
+            workspace: "CIDemoiOS.xcworkspace",
+            include_bitcode: false,
+            clean: true)
   end
 end
