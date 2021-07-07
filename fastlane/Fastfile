@@ -22,15 +22,6 @@ TEST_DEVICES = [
   desc "Description of what the lane does"
   lane :test do
 
-	# light-test
-  # scan(scheme: "Example")
-
-
-  # run_tests(
-  #           scheme: "CIDemoiOSTests",
-  #           skip_detect_devices:true
-  #           )
-
   run_tests(workspace: "CIDemoiOS.xcworkspace",
   			# destination: TEST_DEVICES,
         # destination: ["iPhone 8"],
