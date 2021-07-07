@@ -15,6 +15,7 @@
 		181246832642999D00A894AE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 181246812642999D00A894AE /* LaunchScreen.storyboard */; };
 		1812468E2642999D00A894AE /* CIDemoiOSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1812468D2642999D00A894AE /* CIDemoiOSTests.swift */; };
 		181246992642999D00A894AE /* CIDemoiOSUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 181246982642999D00A894AE /* CIDemoiOSUITests.swift */; };
+		18B0D24426652C5900F0C518 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18B0D24326652C5900F0C518 /* AudioToolbox.framework */; };
 		93D18BFF8E9FB3ED53D6A7D1 /* Pods_CIDemoiOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ACA9DEBA8C6AC9EBBDDA01DD /* Pods_CIDemoiOS.framework */; };
 		C482D4E4817A46324F6088F6 /* Pods_CIDemoiOS_CIDemoiOSUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 85C2E77B7987A50262F06990 /* Pods_CIDemoiOS_CIDemoiOSUITests.framework */; };
 		D428B59CB78748E029C2EEF7 /* Pods_CIDemoiOSTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DE57C326317DBE8E96F95F9D /* Pods_CIDemoiOSTests.framework */; };
@@ -52,6 +53,8 @@
 		181246942642999D00A894AE /* CIDemoiOSUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CIDemoiOSUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		181246982642999D00A894AE /* CIDemoiOSUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CIDemoiOSUITests.swift; sourceTree = "<group>"; };
 		1812469A2642999D00A894AE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		18B0D24226652C5900F0C518 /* CIDemoiOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = CIDemoiOS.entitlements; sourceTree = "<group>"; };
+		18B0D24326652C5900F0C518 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
 		24E48C06AF8BF8202254EDE7 /* Pods-CIDemoiOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CIDemoiOS.debug.xcconfig"; path = "Target Support Files/Pods-CIDemoiOS/Pods-CIDemoiOS.debug.xcconfig"; sourceTree = "<group>"; };
 		5A6CFB19CCDA1989F223148A /* Pods-CIDemoiOSTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CIDemoiOSTests.release.xcconfig"; path = "Target Support Files/Pods-CIDemoiOSTests/Pods-CIDemoiOSTests.release.xcconfig"; sourceTree = "<group>"; };
 		6207E3CB206437D8D9B95F16 /* Pods-CIDemoiOSTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CIDemoiOSTests.debug.xcconfig"; path = "Target Support Files/Pods-CIDemoiOSTests/Pods-CIDemoiOSTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -69,6 +72,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				93D18BFF8E9FB3ED53D6A7D1 /* Pods_CIDemoiOS.framework in Frameworks */,
+				18B0D24426652C5900F0C518 /* AudioToolbox.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -116,6 +120,7 @@
 		181246752642999A00A894AE /* CIDemoiOS */ = {
 			isa = PBXGroup;
 			children = (
+				18B0D24226652C5900F0C518 /* CIDemoiOS.entitlements */,
 				181246762642999A00A894AE /* AppDelegate.swift */,
 				181246782642999A00A894AE /* SceneDelegate.swift */,
 				1812467A2642999A00A894AE /* ViewController.swift */,
@@ -148,6 +153,7 @@
 		897D164D503A4B0F4228653A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				18B0D24326652C5900F0C518 /* AudioToolbox.framework */,
 				ACA9DEBA8C6AC9EBBDDA01DD /* Pods_CIDemoiOS.framework */,
 				85C2E77B7987A50262F06990 /* Pods_CIDemoiOS_CIDemoiOSUITests.framework */,
 				DE57C326317DBE8E96F95F9D /* Pods_CIDemoiOSTests.framework */,
@@ -478,7 +484,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -533,7 +539,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -549,7 +555,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				CODE_SIGN_ENTITLEMENTS = CIDemoiOS/CIDemoiOS.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = VY9XXZWXG5;
 				INFOPLIST_FILE = CIDemoiOS/Info.plist;
@@ -560,7 +567,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = jp.co.rakuten.mobile.anshin.qa;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE_SPECIFIER = Anshin_Control_Enterprise;
+				PROVISIONING_PROFILE_SPECIFIER = Anshin_Control_Dev;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -572,6 +579,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = CIDemoiOS/CIDemoiOS.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Distribution";
 				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = VY9XXZWXG5;
@@ -595,7 +603,9 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = VY9XXZWXG5;
 				INFOPLIST_FILE = CIDemoiOSTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -605,6 +615,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = jp.co.rakuten.mobile.CIDemoiOSTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=macosx*]" = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CIDemoiOS.app/CIDemoiOS";
@@ -617,7 +629,8 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = VY9XXZWXG5;
 				INFOPLIST_FILE = CIDemoiOSTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -627,6 +640,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = jp.co.rakuten.mobile.CIDemoiOSTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=macosx*]" = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CIDemoiOS.app/CIDemoiOS";
@@ -638,7 +653,10 @@
 			baseConfigurationReference = 82A6BBA3941F715E19D55A4A /* Pods-CIDemoiOS-CIDemoiOSUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = VY9XXZWXG5;
 				INFOPLIST_FILE = CIDemoiOSUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -647,6 +665,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = jp.co.rakuten.mobile.CIDemoiOSUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=macosx*]" = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_TARGET_NAME = CIDemoiOS;
@@ -658,7 +678,10 @@
 			baseConfigurationReference = 8469BB509A8FB4004BE19547 /* Pods-CIDemoiOS-CIDemoiOSUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = VY9XXZWXG5;
 				INFOPLIST_FILE = CIDemoiOSUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -667,6 +690,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = jp.co.rakuten.mobile.CIDemoiOSUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=macosx*]" = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_TARGET_NAME = CIDemoiOS;

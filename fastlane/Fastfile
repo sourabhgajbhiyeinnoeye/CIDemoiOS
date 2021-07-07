@@ -14,20 +14,36 @@
 # update_fastlane
 
 platform :ios do
+
+TEST_DEVICES = [
+    'platform=iOS,id=00008030-001610811460402E',
+  ]
+
   desc "Description of what the lane does"
   lane :test do
-  run_tests(workspace: "CIDemoiOS.xcworkspace",
-            devices: ["iPhone 8"],
-            scheme: "CIDemoiOSTests")
-  build_app(scheme: "CIDemoiOS",
-  			export_method: "enterprise",
-  			export_options: {
-		      provisioningProfiles: { 
-		        "jp.co.rakuten.mobile.anshin.qa" => "Anshin_Control_Enterprise"
-		      }
-		    },
-            workspace: "CIDemoiOS.xcworkspace",
-            include_bitcode: false,
-            clean: true)
+
+	# light-test
+  # scan(scheme: "Example")
+
+
+  run_tests(
+            scheme: "CIDemoiOSTests",
+            skip_detect_devices:true
+            )
+
+  # run_tests(workspace: "CIDemoiOS.xcworkspace",
+  # 			destination: TEST_DEVICES,
+  #           # devices: ["iPhone"],
+  #           scheme: "CIDemoiOSTests")
+  # build_app(scheme: "CIDemoiOS",
+  # 			export_method: "enterprise",
+  # 			export_options: {
+		#       provisioningProfiles: { 
+		#         "jp.co.rakuten.mobile.anshin.qa" => "Anshin_Control_Enterprise"
+		#       }
+		#     },
+  #           workspace: "CIDemoiOS.xcworkspace",
+  #           include_bitcode: false,
+  #           clean: true)
   end
 end
