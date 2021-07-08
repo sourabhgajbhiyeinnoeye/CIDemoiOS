@@ -20,7 +20,7 @@ TEST_DEVICES = [
   ]
 
   desc "Description of what the lane does"
-  lane :metrics do
+  lane :test do
 
   run_tests(workspace: "CIDemoiOS.xcworkspace",
   			# destination: TEST_DEVICES,
