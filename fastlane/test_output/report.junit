@@ -1,11 +1,11 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <testsuites name='CIDemoiOSUITests.xctest' tests='4' failures='0'>
   <testsuite name='CIDemoiOSTests.CIDemoiOSTests' tests='3' failures='0'>
-    <testcase classname='CIDemoiOSTests.CIDemoiOSTests' name='testCalculation' time='0.005'/>
-    <testcase classname='CIDemoiOSTests.CIDemoiOSTests' name='testExample' time='0.002'/>
-    <testcase classname='CIDemoiOSTests.CIDemoiOSTests' name='testPerformanceExample' time='0.287'/>
+    <testcase classname='CIDemoiOSTests.CIDemoiOSTests' name='testCalculation' time='0.003'/>
+    <testcase classname='CIDemoiOSTests.CIDemoiOSTests' name='testExample' time='0.001'/>
+    <testcase classname='CIDemoiOSTests.CIDemoiOSTests' name='testPerformanceExample' time='0.270'/>
   </testsuite>
   <testsuite name='CIDemoiOSUITests.CIDemoiOSUITests' tests='1' failures='0'>
-    <testcase classname='CIDemoiOSUITests.CIDemoiOSUITests' name='testExample' time='3.685'/>
+    <testcase classname='CIDemoiOSUITests.CIDemoiOSUITests' name='testExample' time='1.654'/>
   </testsuite>
 </testsuites>

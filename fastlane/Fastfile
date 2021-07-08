@@ -20,7 +20,7 @@ TEST_DEVICES = [
   ]
 
   desc "Description of what the lane does"
-  lane :test do
+  lane :metrics do
 
   run_tests(workspace: "CIDemoiOS.xcworkspace",
   			# destination: TEST_DEVICES,
@@ -37,5 +37,7 @@ TEST_DEVICES = [
             workspace: "CIDemoiOS.xcworkspace",
             include_bitcode: false,
             clean: true)
+
+  # sonar
   end
 end
